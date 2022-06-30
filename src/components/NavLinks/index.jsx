@@ -1,12 +1,12 @@
 import P from 'prop-types';
 
-import { MenuLink } from '../MenuLink';
+import MenuLink from '../MenuLink';
 
 import * as Styled from './styles';
 
-export const NavLinks = ({ links = [] }) => {
+const NavLinks = ({ links = [] }) => {
   return (
-    <Styled.Container>
+    <Styled.Container aria-label="Main menu">
       {links.map((link) => (
         <MenuLink key={link.link} {...link} />
       ))}
@@ -23,3 +23,5 @@ NavLinks.propTypes = {
     }),
   ),
 };
+
+export default NavLinks;

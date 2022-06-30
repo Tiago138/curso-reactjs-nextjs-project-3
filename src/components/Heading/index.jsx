@@ -1,7 +1,7 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 
-export const Heading = ({
+const Heading = ({
   children,
   colorDark = true,
   as = 'h1',
@@ -27,3 +27,5 @@ Heading.propTypes = {
   size: P.oneOf(['small', 'medium', 'big', 'huge']),
   uppercase: P.bool,
 };
+
+export default Heading;

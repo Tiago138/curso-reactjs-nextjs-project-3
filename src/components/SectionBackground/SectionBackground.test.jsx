@@ -1,6 +1,7 @@
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
-import { SectionBackground } from '.';
+
+import SectionBackground from '.';
 
 describe('<SectionBackground />', () => {
   it('should render with background dark', () => {

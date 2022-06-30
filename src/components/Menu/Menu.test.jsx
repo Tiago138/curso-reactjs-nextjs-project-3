@@ -1,8 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
-import { Menu } from '.';
-
 import { theme } from '../../styles/theme';
+
+import Menu from '.';
 
 import linksMock from '../NavLinks/mock';
 

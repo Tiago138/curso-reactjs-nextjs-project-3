@@ -1,10 +1,10 @@
 import P from 'prop-types';
 
-import { Heading } from '../Heading';
+import Heading from '../Heading';
 
 import * as Styled from './styles';
 
-export const LogoLink = ({ text, srcImg = '', link }) => {
+const LogoLink = ({ text, srcImg = '', link }) => {
   return (
     <Heading size="small" uppercase>
       <Styled.Container href={link}>
@@ -20,3 +20,5 @@ LogoLink.propTypes = {
   srcImg: P.string,
   link: P.string.isRequired,
 };
+
+export default LogoLink;

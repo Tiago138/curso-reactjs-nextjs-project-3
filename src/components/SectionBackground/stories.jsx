@@ -1,4 +1,4 @@
-import { SectionBackground } from '.';
+import SectionBackground from '.';
 
 export default {
   title: 'SectionBackground',
